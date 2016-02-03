@@ -8,9 +8,9 @@ module Rack
       # we support _escaped_fragment_ and want to ensure people aren't
       # penalized for cloaking.
       @crawler_user_agents = [
-        # 'googlebot',
-        # 'yahoo',
-        # 'bingbot',
+        'googlebot',
+        'yahoo',
+        'bingbot',
         'baiduspider',
         'facebookexternalhit',
         'twitterbot',
@@ -27,7 +27,8 @@ module Rack
         'vkShare',
         'W3C_Validator',
         'redditbot',
-        'Applebot'
+        'Applebot',
+        'Mediapartners-Google'
       ]
 
       @extensions_to_ignore = [
